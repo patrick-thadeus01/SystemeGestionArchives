@@ -219,7 +219,7 @@ $(document).ready(function(){
 				user_id: id
 			},
 			success: function(){
-				$("#modal_confirm").modal('hide');
+				$("#modal_confirm").modal('hide')
 				$(".del_user" + id).empty();
 				$(".del_user" + id).html("<td colspan='6'><center class='text-danger'>Deleting...</center></td>");
 				setTimeout(function(){
