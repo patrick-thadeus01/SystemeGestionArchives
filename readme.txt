@@ -16,6 +16,7 @@ FIRST Download
 6. Import db_sfms.sql file(given inside the zip package in SQL file folder)
 
 7.Run the script http://localhost/file_Management_System
+8.Congratulation you have completed the previous steps
 
 
 **LOGIN DETAILS** 
