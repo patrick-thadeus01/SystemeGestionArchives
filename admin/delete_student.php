@@ -14,6 +14,7 @@
 		}
 	}
 	
+	//navigating to find the file before deleting it
 	function removeDir($dir) {
 		$items = scandir($dir);
 		foreach ($items as $item) {

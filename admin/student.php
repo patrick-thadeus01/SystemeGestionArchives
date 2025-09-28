@@ -47,7 +47,7 @@
 		<table id = "table" class="table table-bordered">
 			<thead>
 				<tr>
-					<th>Student no</th>
+					<th>Student No</th>
 					<th>Firstname</th>
 					<th>Lastname</th>
 					<th>Gender</th>
@@ -103,36 +103,41 @@
 								</select>
 							</div>
 							<div class="form-inline">
-								<label>Year</label>
-								<select name="year" class="form-control" required="required">
-									<option value=""></option>
-									<option value="1">1</option>
-									<option value="2">2</option>
-									<option value="3">3</option>
-									<option value="4">4</option>
-								</select>
-								<label>Section</label>
+								<label>Fields</label>
 								<select name="section" class="form-control" required="required">
-									<option value=""></option>
+									<option value=""> Select Field</option>
 									<option value="INF">INF</option>
 									<option value="MATHS">MATHS</option>
-									<option value="PHY">PHY</option>
 									<option value="BOA">BOA</option>
 									<option value="BC">BC</option>
+									<option value="PHY">PHY</option>
+									<option value="ESCOM">ESCOM</option>
 									<option value="FSEGA">FSEGA</option>
+								</select>
+								<label>Year</label>
+								<select name="year" class="form-control" required="required">
+									<option value="">Select Level </option>
+									<option value="1">L1</option>
+									<option value="2">L2</option>
+									<option value="3">L3</option>
+									<option value="4">M1</option>
+									<option value="5">M2</option>
+									<option value="5">D1</option>
+									<option value="5">D2</option>
+									<option value="5">D3</option>
 								</select>
 							</div>
 							<br />
 							<div class="form-group">
-								<label>Mot de passe</label>
+								<label>Passwordord</label>
 								<input type="password" name="password" class="form-control" required="required"/>
 							</div>
 						</div>
 					</div>
 					<div style="clear:both;"></div>
 					<div class="modal-footer">
-						<button type="button" class="btn btn-danger" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Fermer</button>
-						<button name="update" class="btn btn-warning" ><span class="glyphicon glyphicon-save"></span> Mettre à jour</button>
+						<button type="button" class="btn btn-danger" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Close</button>
+						<button name="update" class="btn btn-warning" ><span class="glyphicon glyphicon-save"></span>Update</button>
 					</div>
 				</form>
 			</div>

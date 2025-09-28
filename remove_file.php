@@ -10,4 +10,4 @@
 			mysqli_query($conn, "DELETE FROM `storage` WHERE `store_id` = '$store_id'") or die(mysqli_error());
 		}
 	}
-?>
+?> 

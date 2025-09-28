@@ -26,7 +26,7 @@
 <body>
 	<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
 		<div class="container-fluid">
-			<label class="navbar-brand">Système De Gestion Des Archives</label>
+			<label class="navbar-brand">Archive Management System</label>
 			<?php 
 				$query = mysqli_query($conn, "SELECT * FROM `user` WHERE `user_id` = '$_SESSION[user]'") or die(mysqli_error());
 				$fetch = mysqli_fetch_array($query);
@@ -58,27 +58,27 @@
 	<?php include 'sidebar.php'?>
 	<div id = "content">
 		<br /><br /><br />
-		<div class="alert alert-info"><h3>Tableaux De Bord</h3></div> 
+		<div class="alert alert-info"><h3>Dash Board</h3></div> 
 		<div>
         <div class="flex-container" style="width:50%;Text-align:center;float:left;">
 			<div class="card" style="width: 28rem;">
 				<div class="card-header">
-					<li class="list-group-item">Utilisateurs</li>
+					<li class="list-group-item">Users</li>
 				</div>
 				<ul class="list-group list-group-flush">
 					<li class="list-group-item">Total Users : <?php echo $users ?> </li>
-					<li class="list-group-item"> <a href="user.php" class="btn btn-primary">Gestionaire des Utilisateurs</a> </li>
+					<li class="list-group-item"> <a href="user.php" class="btn btn-primary">Users Management</a> </li>
 				</ul>
 			</div>
 		</div>
         <div class="flex-container" style="Text-align:center;Width:50%;float:right">
 		  	<div class="card" style="width: 28rem;">
 				<div class="card-header">
-					<li class="list-group-item">Etudiants</li>
+					<li class="list-group-item">Student</li>
 				</div>
 				<ul class="list-group list-group-flush">
-					<li class="list-group-item">Total Etudiants :  <?php echo $students ?> </li>
-					<li class="list-group-item"> <a href="student.php" class="btn btn-primary">Gestionaire Des Etudiants</a> </li>
+					<li class="list-group-item">Total Students :  <?php echo $students ?> </li>
+					<li class="list-group-item"> <a href="student.php" class="btn btn-primary">Students Management</a> </li>
 				</ul>
 			</div>
 		</div>
@@ -88,7 +88,7 @@
 	</div>
 </div>
 	<div id = "footer">
-		<label class = "footer-title">&copy; Droits d'auteur du Système de gestion des archives <?php echo date("Y", strtotime("+8 HOURS"))?></label>
+		<label class = "footer-title">&copy; Copy right 2025 Archive Management System <?php echo date("Y", strtotime("+8 HOURS"))?></label>
 	</div>
 <?php include 'script.php'?>	
 </body>

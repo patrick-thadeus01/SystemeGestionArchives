@@ -17,6 +17,10 @@ FIRST Download
 
 7.Run the script http://localhost/file_Management_System
 
+8.Congratulation you have completed all the steps
+
+9.Dive 
+
 
 **LOGIN DETAILS** 
 

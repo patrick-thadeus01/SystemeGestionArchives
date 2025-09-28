@@ -10,13 +10,13 @@
 <body>
 	<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
 		<div class="container-fluid">
-			<label class="navbar-brand">VISHI HIGH SCHOOL ARCHIVES</label>
-			<a href="../index.php" class="navbar-brand">Connexion Etudiant</a>
+			<label class="navbar-brand">LABO ACADEMY</label>
+			<a href="../index.php" class="navbar-brand">Login Student</a>
 		</div>
 	</nav>
 	<?php include 'login.php'?>
 	<div id = "footer">
-		<label class = "footer-title">&copy; Droit d'auteur du Système de getion des archives <?php echo date("Y", strtotime("+8 HOURS"))?></label>
+		<label class = "footer-title">&copy; copy right for Archive management system <?php echo date("Y", strtotime("+8 HOURS"))?></label>
 	</div>
 </body>
 </html>

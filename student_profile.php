@@ -8,7 +8,7 @@
 ?>
 <html lang="en">
 	<head>
-		<title>Système de Gestion Des Archive de L'université</title>
+		<title>Archive Management System</title>
 		<meta charset = "utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="admin/css/bootstrap.css" />
@@ -18,7 +18,7 @@
 <body>
 	<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
 		<div class="container-fluid">
-			<label class="navbar-brand">VISHI HIGH SCHOOL ARCHIVES</label>
+			<label class="navbar-brand">LABO ACADEMY</label>
 		</div>
 	</nav>
 	<div class="col-md-8">
@@ -29,8 +29,8 @@
 				<table id="table" class="table table-bordered">
 					<thead>
 						<tr>
-							<th>Nom du fichier</th>
-							<th>Type de fichier</th>
+							<th>File name</th>
+							<th>File type</th>
 							<th>Date Uploaded</th>
 							<th>Action</th>
 						</tr>
@@ -47,7 +47,7 @@
 							<td><?php echo substr($fetch1['filename'], 0 ,30)?></td>
 							<td><?php echo $fetch1['file_type']?></td>
 							<td><?php echo $fetch1['date_uploaded']?></td>
-							<td><a href="download.php?store_id=<?php echo $fetch1['store_id']?>" class="btn btn-success"><span class="glyphicon glyphicon-download"></span> Télécharger</a> | <button class="btn btn-danger btn_remove" type="button" id="<?php echo $fetch1['store_id']?>"><span class="glyphicon glyphicon-trash"></span> Supprimer</button></td>
+							<td><a href="download.php?store_id=<?php echo $fetch1['store_id']?>" class="btn btn-success"><span class="glyphicon glyphicon-download"></span> Download</a> | <button class="btn btn-danger btn_remove" type="button" id="<?php echo $fetch1['store_id']?>"><span class="glyphicon glyphicon-trash"></span> Delete</button></td>
 						</tr>
 						<?php
 							}
@@ -60,7 +60,7 @@
 	<div class="col-md-4">
 		<div class="panel panel-primary" style="margin-top:20%;">
 			<div class="panel-heading">
-				<h1 class="panel-title">Student Information</h1>
+				<h1 class="panel-title">Student Infos</h1>
 			</div>
 			<div class="panel-body">
 				<h4>Student no: <label class="pull-right"><?php echo $fetch['stud_no']?></label></h4>
@@ -113,7 +113,7 @@
 		<div class="modal-dialog modal-dialog-centered">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h3 class="modal-title">Système </h3>
+					<h3 class="modal-title">Archive Management System </h3>
 				</div>
 				<div class="modal-body">
 					<center><h4 class="text-danger">Are you sure you want to remove this file?</h4></center>
@@ -130,7 +130,7 @@
 		<div class="modal-dialog modal-dialog-centered">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h3 class="modal-title">Mise à jour de l'étudiant</h3>
+					<h3 class="modal-title">Update Student</h3>
 				</div>
 				<div class="modal-body">
 				<?php
@@ -156,14 +156,14 @@
 						<label>Gender:</label> 
 						<select class="form-control" name="gender">
 							<option value=""></option>
-							<option value="Male">Homme</option>
-							<option value="Female">Femme</option>
+							<option value="Male">Male</option>
+							<option value="Female">Female</option>
 						</select>
 					</div>
 					<div class="form-inline">
 					<label>Section</label>
 						<select name="section" class="form-control" required="required">
-							<option value=""> Selectionner la filière</option>
+							<option value=""> Select Field</option>
 							<option value="INF">INF</option>
 							<option value="MATHS">MATHS</option>
 							<option value="PHY">PHY</option>
@@ -174,18 +174,21 @@
 
 						<label>Year</label>
 						<select name="year" class="form-control" required="required">
-							<option value="">Select Year </option>
-							<option value="1">1</option>
-							<option value="2">2</option>
-							<option value="3">3</option>
-							<option value="4">4</option>
-							<option value="5">5</option>
+							<option value="">Select Level </option>
+							<option value="1">L1</option>
+							<option value="2">L2</option>
+							<option value="3">L3</option>
+							<option value="4">M1</option>
+							<option value="5">M2</option>
+							<option value="5">D1</option>
+							<option value="5">D2</option>
+							<option value="5">D3</option>
 						</select>
 						
 					</div>
 					<br />
 					<div class="form-group">
-						<label>Mot de passe:</label> 
+						<label>Password:</label> 
 						<input type="password" class="form-control" value="" name="password" required="required"/>
 					</div>
 				</form>
@@ -193,8 +196,8 @@
 			</div>
 				</div>
 				<div class="modal-footer">
-				<a type="button" class="btn btn-success" data-dismiss="modal">Annuler</a>
-				<button class="btn btn-warning" name="update"><span class="glyphicon glyphicon-edit"></span>Sauvegarder</button>
+				<a type="button" class="btn btn-success" data-dismiss="modal">Cancel</a>
+				<button class="btn btn-warning" name="update"><span class="glyphicon glyphicon-edit"></span>Save</button>
 				</div>
 			</div>
 		</div>

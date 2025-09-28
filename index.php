@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Système de Gestion des archives</title>
+		<title>Archive Management System</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel = "stylesheet" type="text/css" href="admin/css/bootstrap.css" />
@@ -10,13 +10,13 @@
 <body>
 	<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
 		<div class="container-fluid">
-			<label class="navbar-brand">Système de gestion des archives</label>
-			<a href="admin/index.php" class="navbar-brand">Connexion admin</a>
+			<label class="navbar-brand">Archive Management System</label>
+			<a href="admin/index.php" class="navbar-brand">Admin Login Page</a>
 		</div>
 	</nav>
 	<?php include 'login.php'?>
 	<div id = "footer">
-		<label class = "footer-title">&copy; Droit d'auteur Système de gestion des archives  <?php echo date("Y", strtotime("+8 HOURS"))?></label>
+		<label class = "footer-title">&copy; Copy right for Archive management system  <?php echo date("Y", strtotime("+8 HOURS"))?></label>
 	</div>
 </body>
 </html>
